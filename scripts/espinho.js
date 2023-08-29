@@ -3,4 +3,10 @@ class Espinho {
     this.tipo = tipo;
     this.posicao = psoicao;
   }
+  DesenharEspinho(){
+    
+  }
+  AlterarPosicao(){
+    
+  }
 }
