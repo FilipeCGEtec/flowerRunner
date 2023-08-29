@@ -5,5 +5,16 @@ class Personagem {
     this.posicaoY = posY;
     this.numeroDeFlores = numFlores;
   }
-
+  Morrer(){
+    
+  }
+  Andar(){
+    posicao = posicaoX + 0.1;
+  }
+  Pular(){
+    posY = posY + 0.1;
+  }
+  ColetarFlor(){
+    
+  }
 }
