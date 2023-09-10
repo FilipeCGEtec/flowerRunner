@@ -31,7 +31,6 @@ Processo de desenvolvimento
 | Morrer()  | Método que apaga o boneco da tela e notifica o jogo para terminar  |
 | Andar()  | Método que move o personagem pelo aixo X - determinado pela velocidade  |
 | Pular() | Método que move o personagem pelo eixo Y |
-| ColetarFlor() | Verifica se o Personagem esta em contato com a flor |
 
   #### Jogo
   
@@ -61,7 +60,7 @@ Processo de desenvolvimento
   
 | Métodos  | Definição |
 | ------------- | ------------- |
-| ColetarFlor()  | Retira a flor da tela  |
+| ColetarFlor()  | Verifica se a  contato com o jogador e retira a flor da tela  |
 | GerarPontuacao()  | Retorna uma pontuacao quando coletada |
 
 Você pode acessar o projeto clicando AQUI
