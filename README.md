@@ -1,5 +1,6 @@
 # flowerRunner
 
+<img src="https://i.ytimg.com/vi/-YOOjdk6cpQ/maxresdefault.jpg">
 Oque é o projeto?
 Este projeto deito na linguagem de JavaScript é um jogo feito com base na música "Flores e o Louco" do cantor Fabio Brazza.
 
@@ -64,4 +65,3 @@ Processo de desenvolvimento
 | ColetarFlor()  | Verifica se a  contato com o jogador e retira a flor da tela  |
 | GerarPontuacao()  | Retorna uma pontuacao quando coletada |
 
-Você pode acessar o projeto clicando AQUI
