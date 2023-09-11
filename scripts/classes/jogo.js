@@ -3,6 +3,7 @@ class Jogo {
       this.flores = flores;
       this.estadoDeJogo = estadodeJogo;
     }
+    flores = 0;
     IniciarJogo(){
       
     }

@@ -31,5 +31,6 @@ class Flor {
     }
     GerarPonto(){
         Jogo.Flores += 1;
+        Jogo.AtualizarPontuacao();
     }
   }
