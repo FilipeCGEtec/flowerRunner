@@ -10,4 +10,4 @@ ctx.fillStyle = "blue"
 ctx.fillRect(0, (canvas.height / 1.3), canvas.width, (canvas.height / 1.2));
 
 
-
+const flor = new Flor();
