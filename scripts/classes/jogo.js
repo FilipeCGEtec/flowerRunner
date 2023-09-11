@@ -1,7 +1,7 @@
 class Jogo {
     constructor(flores, estadoDeJogo){
       this.flores = flores;
-      this.estadoDejogo = estadodeJogo;
+      this.estadoDeJogo = estadodeJogo;
     }
     IniciarJogo(){
       
