@@ -9,5 +9,16 @@ ctx.fillRect(0, 0, canvas.width, canvas.height);
 ctx.fillStyle = "blue"
 ctx.fillRect(0, (canvas.height / 1.3), canvas.width, (canvas.height / 1.2));
 
+const Jogo = new Jogo();
+const Flor = new Flor();
+const Personagem = new Personagem();
+const Espinho = new Espinho();
+const Perseguidor = new Perseguidor();
 
-const flor = new Flor();
+Personagem.posicaoX = (canvas.height / 1.3) - 3;
+Personagem.PosicaoY = 5;
+Personagem.Desenhar();
+Personagem.Andar();
+Personagem.Pular();
+Personagem.ColetarFlor();
+

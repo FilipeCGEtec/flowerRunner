@@ -30,7 +30,7 @@ class Flor {
       this.GerarPonto();
     }
     GerarPonto(){
-        Jogo.Flores += 1;
+        Jogo.flores += 1;
         Jogo.AtualizarPontuacao();
     }
-  }
+}

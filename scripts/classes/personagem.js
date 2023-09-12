@@ -8,7 +8,11 @@ class Personagem {
     Jogo.Flores = 0;
   }
   Andar(){
-    posicao += 0.1;
+    if(event.keyCode == 68) {
+        this.posicaoX += 1;
+      }else if (event.keyCode == 65) {
+        this.posicaoX -= 1;
+    }
   }
   Pular(){
     if(event.keyCode == 32) {
@@ -21,5 +25,10 @@ class Personagem {
     if((this.posicaoX == Flor.posicaoX + 1 || this.posicaoX == Flor.posicaoX - 1) && (this.posicaoY == Flor.posicaoY + 1 || this.posicaoY == Flor.posicaoY - 1)){
       Flor.ColetarFlor();
     }
+  }
+  Desenhar(){
+    ctx.beginPath();
+    ctx.fillRect(posicaoX, posicaoY, (posicaoX + 2), (posicaoY + 2));
+    ctx.stroke();
   }
 }
