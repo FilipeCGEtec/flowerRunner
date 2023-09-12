@@ -4,8 +4,10 @@ class Personagem {
     this.velociadade = velocidade;
     this.posicaoY = posicaoY;
   }
-  Morrer(){
-    Jogo.Flores = 0;
+  Morrer(x, y){
+    if(this.posicaoX == x || this.posicaoY == y){
+      Jogo.Flores = 0;
+    }
   }
   Andar(){
     if(event.keyCode == 68) {
