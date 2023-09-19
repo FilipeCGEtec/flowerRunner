@@ -65,3 +65,10 @@ Processo de desenvolvimento
 | ColetarFlor()  | Verifica se a  contato com o jogador e retira a flor da tela  |
 | GerarPontuacao()  | Retorna uma pontuacao quando coletada |
 
+# Relatorio de desenvolvimento
+  O projeto tem base em um documento em HTML com as margenns retiradas através de CSS.
+  o script principal define o documento HTML e o Canvas e define todas as variaveis utilizadas. No script principal são feitas as instancias das classes utilizadas durante o jogo. O script principal tem duas funções principais: Plataformas e EventListener.
+  A função de plataforma desenha no canvas uma plataforma de tamanho predefinido nas coordenadas fornecidas em seus paramentros. Nessa função esta imbuida a função de desenhar flores.
+  A função de EventListener identifica quando uma tecla do teclado é pressionada e executa ações de acordo. Nessa função esta imbuida a função de movimento do personagem.
+  ## Personagem
+  <img src="Imagens/personagem.png">
