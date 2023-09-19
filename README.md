@@ -89,3 +89,6 @@ Em progresso
   <img src="Imagens/espinho.png">
   
   A classe espinho é uma das ameaças ao jogador. A classe não foi trabalhada, mas deveria ter um método para matar o jogador ao contato e teria variação em seu tipo.
+
+  # Video
+  Como o Github não consegue suportar este video (mesmo em MP4) <a href="https://www.youtube.com/watch?v=-2Q53MEoCqU"> CLIQUE AQUI</a> para ver o vídeo
