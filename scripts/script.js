@@ -20,6 +20,7 @@ const avatar = new Personagem(30, 1, 30);
 const game = new Jogo();
 const spike = new Espinho();
 const stalker = new Perseguidor();
+spike.tipo = false;
 game.flores = 0;
 plataforma(400, 750);
 plataforma(1110, 750);

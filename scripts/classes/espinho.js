@@ -4,13 +4,15 @@ class Espinho {
     this.posicaoX = posicaoX;
     this.posicaoY = posicaoY;
   }
-  DesenharEspinho(){
+  DesenharEspinho(posicaoX, posicaoY){
     if(this.tipo == true){
       ctx.beginPath();
       ctx.lineTo((posicaoX - 5), posicaoY);
       ctx.lineTo(posicaoX, (posicaoY - 10));
       ctx.lineTo((posicaoX + 5), posicaoY)
       ctx.lineTo(posicaoX, posicaoY);
+      ctx.fillStyle = "gray";
+      ctx.fill();
       ctx.closePath()
     }else{
       ctx.beginPath();
@@ -24,8 +26,11 @@ class Espinho {
       ctx.lineTo((posicaoX - 5), (posicaoY + 5));
       ctx.lineTo((posicaoX - 15), posicaoY);
       ctx.lineTo((posicaoX - 5), (posicaoY - 5));
+      ctx.fillStyle = "gray";
+      ctx.fill();
       ctx.closePath()
-      ctx.fillRect((posicaoX - 5), (posicaoY - 5), (posicaoX +5), (posicaoY + 5))
+      ctx.fillRect((posicaoX - 5), (posicaoY - 5), 5, 5)
+      this.AlterarPosicao();
     }
   }
   AlterarPosicao(){
