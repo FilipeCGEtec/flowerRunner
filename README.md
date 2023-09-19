@@ -72,3 +72,10 @@ Processo de desenvolvimento
   A função de EventListener identifica quando uma tecla do teclado é pressionada e executa ações de acordo. Nessa função esta imbuida a função de movimento do personagem.
   ## Personagem
   <img src="Imagens/personagem.png">
+  A classe personagem é a classe do principal elemento do jogo. Nessa classe estão os métodos "Andar" e "Pular". O método "Andar" modifica as coordenadas no eixo X enquanto apaga e re-desenhao personagem para dar a impressão de movimento.
+  ## Flor
+  <img src="Imagens/flor.png">
+  A classe flores é a classe da pontuação do jogo. Nessa classe está o método de desenho da flor. Nessa classe deveria existir um método de coleta e atualização de pontos, que apagaria a flor em contato com o jogador e retornaria um ponto para o jogo.
+  ## Espinho
+  <img src="Imagens/espinho.png">
+  A classe espinho é uma das ameaças ao jogador. A classe não foi trabalhada, mas deveria ter um método para matar o jogador ao contato e teria variação em seu tipo.
