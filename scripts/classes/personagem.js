@@ -1,37 +1,57 @@
 class Personagem {
-  constructor(posicaoX, velocidade, posicaoY){
-    this.posicaoX = posicaoX;
-    this.velociadade = velocidade;
-    this.posicaoY = posicaoY;
+  constructor(posicaoX, velocidade, posicaoY, pulo, tecla, trava){
+    this.perX = posicaoX;
+    this.vel = velocidade;
+    this.perY = posicaoY;
+    this.tecla = tecla;
+    this.trava = trava;
+    this.pulo = pulo;
   }
-  Morrer(x, y){
-    if(this.posicaoX == x || this.posicaoY == y){
-      Jogo.Flores = 0;
+  
+  Morrer(posX, posY){
+    if(x == posX || y == posY){
+      Jogo.call(this, flores);
+      this.flores = 0;
     }
   }
+
   Andar(direcao){
-    if(direcao == 68) {
-        this.posicaoX += 10;
-      }else if (direcao == 65) {
-        this.posicaoX -= 10;
+    if(this.perX >= this.trava){
+      this.perX = this.trava - 3;
+    }else if(this.peX >= 1800){
+      this.perX = 1707;
+    }else if(direcao === "d") {
+      ctx.fillStyle = "black";
+      ctx.fillRect(avatar.perX, avatar.perY, 35, 35);
+      this.vel = 4;
+      this.perX += this.vel;
+      console.log(this.perX);
+      this.Desenhar(this.perX, this.perY);
+      return;
+    }else if (direcao === "a") {
+      ctx.fillStyle = "black";
+      ctx.fillRect(avatar.perX, avatar.perY, 35, 35);
+      this.vel = -4;
+      this.perX += this.vel;
+      console.log(this.perX);
+      this.Desenhar(this.perX, this.perY);
+      return;
     }
   }
-  Pular(tecla){
-    if(tecla == 32) {
-      for(i = 0; i < 5; i++){
-        this.posicaoY = this.posicaoY + 5 - i;
-      }
+  Pular(){
+    if(this.tecla != null){
+      for(this.pulo = 5; this.pulo > -5; this.pulo--){
+      ctx.fillStyle = "black";
+      ctx.fillRect(avatar.perX, avatar.perY, 35, 35);
+      this.perY -= this.pulo;
+      console.log(this.perY);
+      this.Desenhar(this.perX, this.perY);
     }
-    this.posicaoY =- 1;
-  }
-  ColetarFlor(){
-    if((this.posicaoX == Flor.posicaoX + 1 || this.posicaoX == Flor.posicaoX - 1) && (this.posicaoY == Flor.posicaoY + 1 || this.posicaoY == Flor.posicaoY - 1)){
-      Flor.ColetarFlor();
     }
   }
-  Desenhar(posicaoX, posicaoY){
-    ctx.beginPath();
-    ctx.fillStyle = "red";
-    ctx.fillRect((posicaoX + 1), (posicaoY + 1), (posicaoX + 1), (posicaoY + 1));
+  Desenhar(x, y){
+      ctx.beginPath();
+      ctx.fillStyle = "red";
+      ctx.fillRect(x, y, 35, 35);
   }
 }
