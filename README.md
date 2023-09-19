@@ -78,7 +78,7 @@ Em progresso
   ## Personagem
   <img src="Imagens/personagem.png">
   
-  A classe personagem é a classe do principal elemento do jogo. Nessa classe estão os métodos "Andar" e "Pular". O método "Andar" modifica as coordenadas no eixo X enquanto apaga e re-desenhao personagem para dar a impressão de movimento.
+  A classe personagem é a classe do principal elemento do jogo. Nessa classe estão os métodos "Andar" e "Pular". O método "Andar" modifica as coordenadas no eixo X enquanto apaga e re-desenha o personagem para dar a impressão de movimento.
   
   ## Flor
   <img src="Imagens/flor.png">
